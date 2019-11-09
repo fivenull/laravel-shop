@@ -56,7 +56,7 @@ class ProductsController extends AdminController
      * @param mixed $id
      * @return Show
      */
-   
+
 
     /**
      * Make a form builder.
