@@ -41,4 +41,11 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return $this->hasMany(UserAddress::class);
     }
+
+    public function favoriteProducts()
+    {
+        return $this->belongsToMany(Product::class, 'user_favorite_products')
+            ->withTimestamps()//代表中间表带有时间戳字段
+            ->orderBy('user_favorite_products.created_at', 'desc');
+    }
 }
