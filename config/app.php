@@ -133,7 +133,8 @@ return [
     | this array to grant expanded functionality to your applications.
     |
     */
-
+    //订单超时自动关闭
+    'order_ttl' => 1800,
     'providers' => [
 
         /*
